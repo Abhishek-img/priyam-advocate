@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" width="500" height="600" fill="none">
+  <defs>
+    <linearGradient id="bgGradPA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14243A"/>
+      <stop offset="50%" stop-color="#0E1B2D"/>
+      <stop offset="100%" stop-color="#08101C"/>
+    </linearGradient>
+    <radialGradient id="goldGlowPA" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#B89A62" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#B89A62" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldBorderPA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#B89A62"/>
+      <stop offset="100%" stop-color="#8B7345"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="600" fill="url(#bgGradPA)"/>
+  <rect width="500" height="600" fill="url(#goldGlowPA)"/>
+
+  <!-- Subtle Architectural Pattern -->
+  <g opacity="0.07" stroke="#FFFFFF" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="600"/>
+    <line x1="420" y1="0" x2="420" y2="600"/>
+    <line x1="0" y1="120" x2="500" y2="120"/>
+    <line x1="0" y1="480" x2="500" y2="480"/>
+    <circle cx="250" cy="240" r="160" fill="none"/>
+  </g>
+
+  <!-- Inner Elegant Border Frame -->
+  <rect x="24" y="24" width="452" height="552" rx="4" stroke="url(#goldBorderPA)" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="30" y="30" width="440" height="540" rx="2" stroke="url(#goldBorderPA)" stroke-width="0.5" stroke-opacity="0.25"/>
+
+  <!-- Partner Crest & Silhouette -->
+  <g transform="translate(250, 220)">
+    <!-- Medallion Background -->
+    <circle cx="0" cy="0" r="105" fill="#182A43" stroke="url(#goldBorderPA)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="95" stroke="#B89A62" stroke-width="0.75" stroke-dasharray="4 3" stroke-opacity="0.6"/>
+
+    <!-- Subtle Advocate / Barrister Robe Silhouette Icon -->
+    <path d="M-55 85 C-55 45, -35 25, 0 25 C35 25, 55 45, 55 85 Z" fill="#203450" opacity="0.7"/>
+    <!-- Collar & Legal Bands -->
+    <path d="M-12 30 L0 52 L12 30" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" opacity="0.9"/>
+    <path d="M-6 50 L-6 78 M6 50 L6 78" stroke="#FFFFFF" stroke-width="5" stroke-linecap="square" opacity="0.9"/>
+    <!-- Head Silhouette -->
+    <circle cx="0" cy="-15" r="34" fill="#203450" opacity="0.8"/>
+
+    <!-- Monogram Overlay -->
+    <text x="0" y="-8" text-anchor="middle" font-family="'Cinzel', 'Playfair Display', serif" font-size="28" font-weight="700" letter-spacing="4" fill="#EAE6DF">PA</text>
+  </g>
+
+  <!-- Partner Information -->
+  <g transform="translate(250, 420)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Cinzel', 'Playfair Display', serif" font-size="24" font-weight="700" letter-spacing="3" fill="#FFFFFF">PRIYAM AGARWAL</text>
+    <line x1="-70" y1="18" x2="70" y2="18" stroke="#B89A62" stroke-width="1.5"/>
+    <circle cx="0" cy="18" r="3" fill="#B89A62"/>
+    <text x="0" y="42" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="600" letter-spacing="4" fill="#B89A62">PARTNER</text>
+    <text x="0" y="65" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" font-weight="400" letter-spacing="1.5" fill="#94A3B8">PALM LEGAL &bull; ADVOCATES &amp; COUNSEL</text>
+    <rect x="-85" y="85" width="170" height="26" rx="13" fill="#14243A" stroke="#B89A62" stroke-width="0.75" stroke-opacity="0.4"/>
+    <text x="0" y="102" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="500" letter-spacing="1.5" fill="#E2E8F0">PORTRAIT RESERVED</text>
+  </g>
+</svg>

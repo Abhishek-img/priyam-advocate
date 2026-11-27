@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | PALM LEGAL | Advocates & Legal Counsel</title>
+  <meta name="description" content="Discover PALM LEGAL, a premier Indian law firm led by partners Priyam Agarwal and Lovesh Mamnani, dedicated to legal excellence, ethical advocacy, and client justice before the Supreme Court and High Courts.">
+  <link rel="canonical" href="https://palmlegal.in/about.html">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://palmlegal.in/about.html">
+  <meta property="og:title" content="About PALM LEGAL | Advocates & Legal Counsel">
+  <meta property="og:description" content="A firm grounded in rigorous research, ethical practice, and client-focused representation across India.">
+  <meta property="og:image" content="assets/images/legal/supreme-court-interior.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            darkNavy: '#0B1728',
+            deepNavy: '#14243A',
+            navyLight: '#1C3252',
+            gold: {
+              DEFAULT: '#B89A62',
+              light: '#D4AF37',
+              pale: '#F1E9DA',
+              dark: '#937848'
+            },
+            ivory: '#F8F7F3',
+            charcoal: '#333B46'
+          },
+          fontFamily: {
+            sans: ['Inter', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+            serif: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+            editorial: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#F8F7F3] text-charcoal flex flex-col min-h-screen antialiased selection:bg-gold selection:text-white">
+
+  <!-- ==========================================================================
+       BAR COUNCIL OF INDIA MANDATORY DISCLAIMER MODAL
+       ========================================================================== -->
+  <div id="disclaimer-overlay" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-darkNavy/80 backdrop-blur-md transition-opacity duration-300" role="dialog" aria-modal="true" aria-labelledby="disclaimer-title">
+    <div class="bg-white max-w-2xl w-full rounded-xl shadow-2xl border border-slate-200 overflow-hidden text-left p-6 sm:p-8">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4 mb-5">
+        <div class="w-10 h-10 rounded-full bg-gold/15 flex items-center justify-center text-gold">
+          <i data-lucide="scale" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h2 id="disclaimer-title" class="font-serif text-xl sm:text-2xl font-bold text-darkNavy tracking-wide">Legal Disclaimer</h2>
+          <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Bar Council of India Compliance</p>
+        </div>
+      </div>
+      <div class="text-slate-600 text-sm leading-relaxed space-y-3.5 max-h-[60vh] overflow-y-auto pr-2">
+        <p>The Bar Council of India prohibits advocates from advertising or soliciting work through websites.</p>
+        <p>By proceeding and clicking <strong class="text-darkNavy">"I Agree & Proceed"</strong> below, you acknowledge that this website is meant solely for informational purposes and not for any advertisement, personal communication, invitation or inducement from <strong class="text-darkNavy">PALM LEGAL</strong> or its partners (<strong class="text-darkNavy">Priyam Agarwal</strong> &amp; <strong class="text-darkNavy">Lovesh Mamnani</strong>) to solicit any work.</p>
+      </div>
+      <div class="mt-6 pt-5 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <span class="text-xs text-slate-400">Please review before continuing to site</span>
+        <button id="btn-disclaimer-agree" class="w-full sm:w-auto px-7 py-3 bg-deepNavy hover:bg-darkNavy text-white font-medium text-sm tracking-wider uppercase rounded-lg shadow-lg transition-all border border-gold/30">
+          I Agree &amp; Proceed
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       TOP ANNOUNCEMENT BAR
+       ========================================================================== -->
+  <aside class="bg-darkNavy text-slate-300 text-xs py-2 px-4 border-b border-white/5" aria-label="Quick Contact Information">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-6">
+        <a href="tel:+919773900915" class="inline-flex items-center gap-2 hover:text-gold transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-gold"></i>
+          <span>+91-9773900915</span>
+        </a>
+        <a href="mailto:contact@palmlegal.in" class="inline-flex items-center gap-2 hover:text-gold transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-gold"></i>
+          <span>contact@palmlegal.in</span>
+        </a>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-slate-400">
+        <span>Supreme Court of India &bull; High Court of Delhi &bull; Delhi NCR &bull; Tribunals</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       MAIN NAVIGATION HEADER
+       ========================================================================== -->
+  <header id="site-header" class="sticky top-0 z-40 bg-deepNavy/95 backdrop-blur-md border-b border-gold/20 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 focus:outline-none" title="PALM LEGAL - Home">
+          <img src="assets/images/logo/logo-light.svg" alt="PALM LEGAL Advocates & Legal Counsel" class="h-11 sm:h-12 w-auto" width="280" height="60">
+        </a>
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium tracking-wide" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link text-slate-300 hover:text-gold hover-gold-line py-1 transition-colors">Home</a>
+          <a href="about.html" class="nav-link text-slate-300 hover:text-gold hover-gold-line py-1 transition-colors">About Us</a>
+          <a href="partners.html" class="nav-link text-slate-300 hover:text-gold hover-gold-line py-1 transition-colors">Our Partners</a>
+          <a href="practice-areas.html" class="nav-link text-slate-300 hover:text-gold hover-gold-line py-1 transition-colors">Practice Areas</a>
+          <a href="blog.html" class="nav-link text-slate-300 hover:text-gold hover-gold-line py-1 transition-colors">FAQs</a>
+          <a href="contact.html" class="nav-link text-slate-300 hover:text-gold hover-gold-line py-1 transition-colors">Contact</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="contact.html" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gold hover:bg-gold-dark text-darkNavy hover:text-white font-medium text-xs tracking-wider uppercase transition-all duration-200 shadow-md">
+            <span>Consultation</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </a>
+          <button id="mobile-menu-toggle" type="button" class="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm hidden lg:hidden"></div>
+  <div id="mobile-menu" class="fixed top-0 right-0 z-50 w-72 sm:w-80 h-full bg-darkNavy text-white transform translate-x-full transition-transform duration-300 ease-in-out p-6 flex flex-col justify-between shadow-2xl lg:hidden">
+    <div>
+      <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+        <img src="assets/images/logo/logo-light.svg" alt="PALM LEGAL" class="h-9 w-auto">
+        <button id="mobile-menu-close" class="p-1.5 rounded-md text-slate-400 hover:text-white" aria-label="Close menu">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-4 text-base font-medium">
+        <a href="index.html" class="nav-link px-3 py-2 rounded-md hover:bg-white/5 hover:text-gold transition-colors">Home</a>
+        <a href="about.html" class="nav-link px-3 py-2 rounded-md hover:bg-white/5 hover:text-gold transition-colors">About Us</a>
+        <a href="partners.html" class="nav-link px-3 py-2 rounded-md hover:bg-white/5 hover:text-gold transition-colors">Our Partners</a>
+        <a href="practice-areas.html" class="nav-link px-3 py-2 rounded-md hover:bg-white/5 hover:text-gold transition-colors">Practice Areas</a>
+        <a href="blog.html" class="nav-link px-3 py-2 rounded-md hover:bg-white/5 hover:text-gold transition-colors">FAQs</a>
+        <a href="contact.html" class="nav-link px-3 py-2 rounded-md hover:bg-white/5 hover:text-gold transition-colors">Contact</a>
+      </nav>
+    </div>
+    <div class="border-t border-white/10 pt-6">
+      <a href="contact.html" class="w-full py-3 bg-gold text-darkNavy font-semibold text-center rounded-lg text-sm uppercase tracking-wider block">
+        Request Consultation
+      </a>
+    </div>
+  </div>
+
+  <main class="flex-grow">
+
+    <!-- ==========================================================================
+         PAGE BANNER & BREADCRUMB
+         ========================================================================== -->
+    <section class="bg-darkNavy text-white py-14 sm:py-20 border-b border-gold/20 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-15">
+        <img src="assets/images/legal/supreme-court-exterior.jpg" alt="Supreme Court Background" class="w-full h-full object-cover">
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Breadcrumb -->
+        <nav class="flex items-center gap-2 text-xs text-slate-400 uppercase tracking-widest mb-4" aria-label="Breadcrumb">
+          <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+          <span class="text-slate-600">/</span>
+          <span class="text-gold font-semibold">About Us</span>
+        </nav>
+        <h1 class="font-serif text-3xl sm:text-5xl font-bold text-white tracking-wide">
+          About PALM LEGAL
+        </h1>
+        <p class="font-editorial text-lg sm:text-xl text-slate-300 italic mt-2">
+          An Advocate Firm Committed to Justice, Diligence &amp; Legal Excellence
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FIRM OVERVIEW CARD & CREDENTIALS
+         ========================================================================== -->
+    <section class="py-12 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="bg-ivory rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
+            
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-deepNavy text-gold flex items-center justify-center shrink-0">
+                <i data-lucide="users" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-500 uppercase tracking-wider block font-semibold">Partners</span>
+                <span class="font-semibold text-darkNavy">Priyam Agarwal &bull; Lovesh Mamnani</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-deepNavy text-gold flex items-center justify-center shrink-0">
+                <i data-lucide="landmark" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-500 uppercase tracking-wider block font-semibold">Primary Courts</span>
+                <span class="font-semibold text-darkNavy">Supreme Court &amp; High Courts</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-deepNavy text-gold flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-500 uppercase tracking-wider block font-semibold">Chamber Location</span>
+                <span class="font-semibold text-darkNavy">Delhi NCR &amp; New Delhi, India</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-deepNavy text-gold flex items-center justify-center shrink-0">
+                <i data-lucide="languages" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-500 uppercase tracking-wider block font-semibold">Consultation Languages</span>
+                <span class="font-semibold text-darkNavy">English &amp; Hindi</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROFESSIONAL PROFILE & PRACTICE APPROACH
+         ========================================================================== -->
+    <section class="py-16 sm:py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <div class="lg:col-span-7 space-y-8 reveal-on-scroll">
+            
+            <div class="space-y-4">
+              <div class="inline-flex items-center gap-2 text-gold font-semibold text-xs uppercase tracking-widest">
+                <span class="w-8 h-px bg-gold"></span>
+                <span>Professional Profile</span>
+              </div>
+              <h2 class="font-serif text-2xl sm:text-3xl font-bold text-darkNavy leading-tight">
+                An Advocate Firm Committed to Justice
+              </h2>
+              <p class="text-slate-600 leading-relaxed">
+                <strong>PALM LEGAL</strong> is an established law firm practising before the Supreme Court of India, various High Courts, and District Courts across the country. Led by partners <strong>Priyam Agarwal</strong> and <strong>Lovesh Mamnani</strong>, our practice spans a wide spectrum of legal domains, combining deep doctrinal knowledge with practical courtroom experience.
+              </p>
+              <p class="text-slate-600 leading-relaxed">
+                Over the years of practice, our chambers have built a reputation for meticulous case preparation, persuasive oral arguments, and unwavering dedication to our clients' causes. We approach every matter — however routine or complex — with the same degree of care, precision, and thoroughness.
+              </p>
+            </div>
+
+            <!-- Academic & Doctrinal Background -->
+            <div class="p-6 rounded-xl bg-ivory border border-slate-200 space-y-3">
+              <h3 class="font-serif text-lg font-bold text-darkNavy flex items-center gap-2">
+                <i data-lucide="graduation-cap" class="w-5 h-5 text-gold"></i>
+                <span>Academic &amp; Doctrinal Foundation</span>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                The legal foundations of PALM LEGAL are anchored in comprehensive legal education from premier law institutions in India. Rigorous training in both procedural jurisprudence and substantive civil, criminal, and constitutional doctrines forms the cornerstone of every advisory and litigation brief undertaken by our firm.
+              </p>
+            </div>
+
+            <!-- Professional Practice -->
+            <div class="space-y-4">
+              <h3 class="font-serif text-lg font-bold text-darkNavy flex items-center gap-2">
+                <i data-lucide="briefcase" class="w-5 h-5 text-gold"></i>
+                <span>Professional Practice &amp; Apex Court Presence</span>
+              </h3>
+              <p class="text-slate-600 leading-relaxed">
+                Our practice encompasses civil litigation, criminal defence, constitutional matters, family law, corporate disputes, and service law. The firm regularly appears before the Supreme Court of India, drafting, filing, and arguing Writ Petitions, Special Leave Petitions (SLPs), and Civil Appeals on behalf of individuals, business entities, and organizations across India.
+              </p>
+              <p class="text-slate-600 leading-relaxed">
+                In addition to litigation, PALM LEGAL provides comprehensive legal opinions, drafts commercial agreements, petitions, and pleadings, and advises clients on dispute prevention and risk management — offering a holistic legal service beyond the courtroom.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Visual Elements & Philosophy Cards -->
+          <div class="lg:col-span-5 space-y-8 reveal-on-scroll">
+            
+            <div class="rounded-2xl overflow-hidden shadow-xl border-4 border-white img-zoom-container">
+              <img 
+                src="assets/images/legal/supreme-court-interior.jpg" 
+                alt="Inside Supreme Court of India" 
+                class="w-full h-80 object-cover"
+                loading="lazy"
+                width="800"
+                height="600"
+              >
+              <div class="p-4 bg-darkNavy text-white">
+                <p class="text-xs text-gold font-medium uppercase tracking-wider">Apex Court Practice</p>
+                <p class="text-sm font-serif font-bold text-slate-200">Supreme Court of India &bull; Chambers of PALM LEGAL</p>
+              </div>
+            </div>
+
+            <div class="rounded-2xl overflow-hidden shadow-xl border-4 border-white img-zoom-container">
+              <img 
+                src="assets/images/legal/office-chamber.jpg" 
+                alt="PALM LEGAL Legal Chambers & Research Library" 
+                class="w-full h-64 object-cover"
+                loading="lazy"
+                width="800"
+                height="600"
+              >
+              <div class="p-4 bg-darkNavy text-white">
+                <p class="text-xs text-gold font-medium uppercase tracking-wider">Chamber Environment</p>
+                <p class="text-sm font-serif font-bold text-slate-200">Comprehensive Legal Research &amp; Client Consultation</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PHILOSOPHY, ETHICS & THE CHAMBER
+         ========================================================================== -->
+    <section class="py-16 sm:py-20 bg-ivory border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+          
+          <!-- Philosophy & Approach -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-6 reveal-on-scroll">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-lg bg-deepNavy text-gold flex items-center justify-center">
+                <i data-lucide="compass" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-darkNavy">
+                Philosophy &amp; Approach
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                At PALM LEGAL, we firmly believe that access to justice is a fundamental right. We work to make quality legal representation accessible, transparent, and responsive to all our clients. Our approach is deeply collaborative — we take the time to understand the complete factual background of a matter, explain the legal position clearly, and work with clients to develop the most effective strategy.
+              </p>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Integrity, transparency, and client confidence are the pillars of our practice. We are committed to maintaining the highest ethical standards as mandated by the Bar Council of India and to upholding the dignity and solemn responsibility of the legal profession.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-100 flex items-center gap-3 text-xs text-slate-500">
+              <i data-lucide="shield-check" class="w-4 h-4 text-gold"></i>
+              <span>Strict compliance with Bar Council of India Standards</span>
+            </div>
+          </div>
+
+          <!-- The Chamber Infrastructure -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-6 reveal-on-scroll">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-lg bg-deepNavy text-gold flex items-center justify-center">
+                <i data-lucide="library" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-darkNavy">
+                The Chamber Infrastructure
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                The chamber is fully equipped to handle all types of legal matters with modern research tools, access to comprehensive Indian and international legal databases, law journals, and up-to-date judicial precedents from the Supreme Court and High Courts.
+              </p>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Clients are welcomed for in-person consultations at our chambers in the Delhi NCR / New Delhi region. In addition, telephonic and secure video consultations are readily available for outstation and international clients requiring urgent or scheduled legal advice.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-100 flex items-center gap-3 text-xs text-slate-500">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-gold"></i>
+              <span>In-person, Telephonic &amp; Video Consultations Available</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         COURTS & JURISDICTION GALLERY
+         ========================================================================== -->
+    <section class="py-16 sm:py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-3 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2 text-gold font-semibold text-xs uppercase tracking-widest">
+            <span class="w-6 h-px bg-gold"></span>
+            <span>Judicial Arenas</span>
+            <span class="w-6 h-px bg-gold"></span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-darkNavy">
+            Forums of Regular Appearance
+          </h2>
+          <p class="text-slate-600 text-sm">
+            Providing comprehensive advocacy across apex, appellate, and commercial judicial bodies.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 legal-card reveal-on-scroll">
+            <div class="h-44 img-zoom-container">
+              <img src="assets/images/legal/supreme-court-exterior.jpg" alt="Supreme Court Exterior" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4 bg-white">
+              <h4 class="font-serif font-bold text-darkNavy text-base">Supreme Court of India</h4>
+              <p class="text-xs text-slate-500 mt-1">SLPs, Writs &amp; Constitutional Appeals</p>
+            </div>
+          </div>
+
+          <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 legal-card reveal-on-scroll">
+            <div class="h-44 img-zoom-container">
+              <img src="assets/images/legal/high-court-building.jpg" alt="High Court Building" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4 bg-white">
+              <h4 class="font-serif font-bold text-darkNavy text-base">High Court of Delhi</h4>
+              <p class="text-xs text-slate-500 mt-1">Original &amp; Appellate Civil / Criminal</p>
+            </div>
+          </div>
+
+          <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 legal-card reveal-on-scroll">
+            <div class="h-44 img-zoom-container">
+              <img src="assets/images/legal/sc-aerial.jpg" alt="Apex Court Complex" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4 bg-white">
+              <h4 class="font-serif font-bold text-darkNavy text-base">Tribunals &amp; Appellate</h4>
+              <p class="text-xs text-slate-500 mt-1">NCLT, NCLAT, CAT, DRT &amp; Consumer</p>
+            </div>
+          </div>
+
+          <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 legal-card reveal-on-scroll">
+            <div class="h-44 img-zoom-container">
+              <img src="assets/images/legal/profile-desk.jpg" alt="Chamber Desk" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4 bg-white">
+              <h4 class="font-serif font-bold text-darkNavy text-base">District Courts NCR</h4>
+              <p class="text-xs text-slate-500 mt-1">Delhi, Ghaziabad, Noida &amp; NCR</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CALL TO ACTION BANNER
+         ========================================================================== -->
+    <section class="py-16 bg-deepNavy text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 reveal-on-scroll">
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white">
+          Ready to Discuss Your Legal Matter?
+        </h2>
+        <p class="text-slate-300 max-w-2xl mx-auto text-base">
+          Reach out for a confidential consultation with PALM LEGAL partners Priyam Agarwal and Lovesh Mamnani.
+        </p>
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="contact.html" class="px-8 py-3.5 bg-gold hover:bg-gold-dark text-darkNavy hover:text-white font-semibold text-sm tracking-wider uppercase rounded-lg shadow-lg transition-colors">
+            Contact Chambers
+          </a>
+          <a href="practice-areas.html" class="px-8 py-3.5 bg-white/10 hover:bg-white/15 text-white border border-white/20 font-medium text-sm tracking-wider uppercase rounded-lg transition-colors">
+            View Practice Areas
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="bg-darkNavy text-slate-400 text-sm border-t border-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4 space-y-4">
+          <a href="index.html" class="inline-block" title="PALM LEGAL">
+            <img src="assets/images/logo/logo-light.svg" alt="PALM LEGAL" class="h-10 w-auto">
+          </a>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Providing dedicated legal representation before the Supreme Court of India, High Courts, and District Courts. Committed to justice, ethics, and client welfare.
+          </p>
+          <div class="pt-2 text-xs text-slate-400 space-y-1">
+            <p><strong class="text-slate-200">Partners:</strong> Priyam Agarwal &bull; Lovesh Mamnani</p>
+            <p>Advocates &amp; Legal Counsel</p>
+          </div>
+        </div>
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-serif text-white text-base font-semibold tracking-wider uppercase text-gold">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-gold transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-gold transition-colors">About Us</a></li>
+            <li><a href="partners.html" class="hover:text-gold transition-colors">Our Partners</a></li>
+            <li><a href="practice-areas.html" class="hover:text-gold transition-colors">Practice Areas</a></li>
+            <li><a href="blog.html" class="hover:text-gold transition-colors">Blog / FAQs</a></li>
+            <li><a href="contact.html" class="hover:text-gold transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-serif text-white text-base font-semibold tracking-wider uppercase text-gold">Practice Areas</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="practice-areas.html#civil" class="hover:text-gold transition-colors">Civil Litigation</a></li>
+            <li><a href="practice-areas.html#criminal" class="hover:text-gold transition-colors">Criminal Law</a></li>
+            <li><a href="practice-areas.html#constitutional" class="hover:text-gold transition-colors">Constitutional Law &amp; Writs</a></li>
+            <li><a href="practice-areas.html#family" class="hover:text-gold transition-colors">Family &amp; Matrimonial Law</a></li>
+            <li><a href="practice-areas.html#corporate" class="hover:text-gold transition-colors">Corporate &amp; Commercial Law</a></li>
+            <li><a href="practice-areas.html#service" class="hover:text-gold transition-colors">Service &amp; Labour Law</a></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-serif text-white text-base font-semibold tracking-wider uppercase text-gold">Chamber Contact</h4>
+          <ul class="space-y-2.5 text-xs text-slate-300">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
+              <span>Ganga Yamuna Hindon Apartments, G1/604, Siddharth Vihar, Indirapuram, Ghaziabad, Uttar Pradesh 201009</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-gold shrink-0"></i>
+              <a href="tel:+919773900915" class="hover:text-gold transition-colors">+91-9773900915</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="mail" class="w-4 h-4 text-gold shrink-0"></i>
+              <a href="mailto:contact@palmlegal.in" class="hover:text-gold transition-colors">contact@palmlegal.in</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="clock" class="w-4 h-4 text-gold shrink-0"></i>
+              <span>Mon – Sat: 10:00 AM – 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <p>&copy; 2025 PALM LEGAL. All Rights Reserved. Partners: Priyam Agarwal &amp; Lovesh Mamnani.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="trigger-disclaimer-modal hover:text-gold transition-colors">Bar Council Disclaimer</a>
+          <span>&bull;</span>
+          <a href="https://wa.me/919773900915" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors inline-flex items-center gap-1">
+            <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400"></i>
+            <span>WhatsApp Enquiry</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-30 p-3 rounded-full bg-deepNavy text-gold border border-gold/40 shadow-xl opacity-0 pointer-events-none transition-all duration-300 hover:bg-gold hover:text-darkNavy" aria-label="Back to top">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

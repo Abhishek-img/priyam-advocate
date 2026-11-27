@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PALM LEGAL | Advocates & Legal Counsel | Supreme Court & High Courts</title>
+  <meta name="description"
+    content="PALM LEGAL is a premier Indian law firm led by partners Priyam Agarwal and Lovesh Mamnani, offering diligent advocacy before the Supreme Court of India, High Courts, and Tribunals.">
+  <link rel="canonical" href="https://palmlegal.in/index.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://palmlegal.in/">
+  <meta property="og:title" content="PALM LEGAL | Advocates & Legal Counsel">
+  <meta property="og:description"
+    content="Dedicated legal advocacy before the Supreme Court of India, High Courts, and District Courts across diverse legal domains.">
+  <meta property="og:image" content="assets/images/legal/supreme-court-exterior.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="PALM LEGAL | Advocates & Legal Counsel">
+  <meta property="twitter:description"
+    content="Dedicated legal advocacy before the Supreme Court of India, High Courts, and District Courts.">
+  <meta property="twitter:image" content="assets/images/legal/supreme-court-exterior.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+
+  <!-- Google Fonts & Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            darkNavy: '#0B1728',
+            deepNavy: '#14243A',
+            navyLight: '#1C3252',
+            gold: {
+              DEFAULT: '#B89A62',
+              light: '#D4AF37',
+              pale: '#F1E9DA',
+              dark: '#937848'
+            },
+            ivory: '#F8F7F3',
+            charcoal: '#333B46'
+          },
+          fontFamily: {
+            sans: ['Inter', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+            serif: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+            editorial: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-[#F8F7F3] text-charcoal flex flex-col min-h-screen antialiased selection:bg-gold selection:text-white">
+
+  <!-- ==========================================================================
+       BAR COUNCIL OF INDIA MANDATORY DISCLAIMER MODAL
+       ========================================================================== -->
+  <div id="disclaimer-overlay"
+    class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-darkNavy/80 backdrop-blur-md transition-opacity duration-300"
+    role="dialog" aria-modal="true" aria-labelledby="disclaimer-title">
+    <div
+      class="bg-white max-w-2xl w-full rounded-xl shadow-2xl border border-slate-200 overflow-hidden text-left p-6 sm:p-8 animate-fade-in">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4 mb-5">
+        <div class="w-10 h-10 rounded-full bg-gold/15 flex items-center justify-center text-gold">
+          <i data-lucide="scale" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h2 id="disclaimer-title" class="font-serif text-xl sm:text-2xl font-bold text-darkNavy tracking-wide">Legal
+            Disclaimer</h2>
+          <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Bar Council of India Compliance</p>
+        </div>
+      </div>
+
+      <div class="text-slate-600 text-sm leading-relaxed space-y-3.5 max-h-[60vh] overflow-y-auto pr-2">
+        <p>The Bar Council of India strictly prohibits advocates and legal practitioners from advertising or soliciting
+          work in any form or manner through websites or other public media.</p>
+        <p>By proceeding and clicking <strong class="text-darkNavy">"I Agree & Proceed"</strong> below, you acknowledge
+          and confirm the following:</p>
+        <ul class="list-disc pl-5 space-y-2 text-slate-600">
+          <li>This website is meant solely for informational purposes and not for any advertisement, personal
+            communication, invitation or inducement of any sort from <strong class="text-darkNavy">PALM LEGAL</strong>
+            or any of its partners (<strong class="text-darkNavy">Priyam Agarwal</strong> & <strong
+              class="text-darkNavy">Lovesh Mamnani</strong>) or associates to solicit any work through this website.
+          </li>
+          <li>The user wishes to gain more information about the firm, its practice areas, and its legal insights for
+            their own information and knowledge.</li>
+          <li>The information provided under this website is made available to the user only upon their specific request
+            and does not constitute legal advice or create an advocate-client relationship between PALM LEGAL and the
+            user.</li>
+          <li>If you wish to obtain more information or would like to get in touch with PALM LEGAL, you may contact
+            directly using the contact information provided on this website.</li>
+        </ul>
+      </div>
+
+      <div class="mt-6 pt-5 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <span class="text-xs text-slate-400">Please review before continuing to site</span>
+        <button id="btn-disclaimer-agree"
+          class="w-full sm:w-auto px-7 py-3 bg-deepNavy hover:bg-darkNavy text-white font-medium text-sm tracking-wider uppercase rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border border-gold/30 flex items-center justify-center gap-2 group">
+          <span>I Agree &amp; Proceed</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 text-gold group-hover:translate-x-1 transition-transform"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       TOP ANNOUNCEMENT BAR
+       ========================================================================== -->
+  <aside class="bg-darkNavy text-slate-300 text-xs py-2 px-4 border-b border-white/5"
+    aria-label="Quick Contact Information">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-6">
+        <a href="tel:+919773900915" class="inline-flex items-center gap-2 hover:text-gold transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-gold"></i>
+          <span>+91-9773900915</span>
+        </a>
+        <a href="mailto:contact@palmlegal.in" class="inline-flex items-center gap-2 hover:text-gold transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-gold"></i>
+          <span>contact@palmlegal.in</span>
+        </a>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-slate-400">
+        <span>Supreme Court of India &bull; High Court of Delhi &bull; Delhi NCR &bull; Tribunals</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       MAIN NAVIGATION HEADER
+       ========================================================================== -->
+  <header id="site-header"
+    class="sticky top-0 z-40 bg-deepNavy/95 backdrop-blur-md border-b border-gold/20 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- PALM LEGAL Logo -->
+        <a href="index.html" class="flex items-center gap-3 focus:outline-none" title="PALM LEGAL - Home">
+          <img src="assets/images/logo/logo-light.svg" alt="PALM LEGAL Advocates & Legal Counsel"
+            class="h-11 sm:h-12 w-auto" width="280" height="60">
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium tracking-wide" aria-label="Main Navigation">
+          <a href="index.html"
+            class="nav-link text-slate-300 hover:text-gold hover-gold-line py-1 transition-colors">Home</a>
+          <a href="about.html"
+            class="nav-link text-slate-300 hover:text-gold hover-gold-line py-1 transition-colors">About Us</a>
+          <a href="partners.html"
+            class="nav-link text-slate-300 hover:text-gold hover-gold-line py-1 transition-colors">Our Partners</a>
+          <a href="practice-areas.html"
+            class="nav-link text-slate-300 hover:text-gold hover-gold-line py-1 transition-colors">Practice Areas</a>
+          <a href="blog.html"
+            class="nav-link text-slate-300 hover:text-gold hover-gold-line py-1 transition-colors">FAQs</a>
+          <a href="contact.html"
+            class="nav-link text-slate-300 hover:text-gold hover-gold-line py-1 transition-colors">Contact</a>
+        </nav>
+
+        <!-- CTA & Mobile Trigger -->
+        <div class="flex items-center gap-4">
+          <a href="contact.html"
+            class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gold hover:bg-gold-dark text-darkNavy hover:text-white font-medium text-xs tracking-wider uppercase transition-all duration-200 shadow-md hover:shadow-lg">
+            <span>Consultation</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobile-menu-toggle" type="button"
+            class="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gold"
+            aria-label="Toggle navigation menu" aria-expanded="false">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer Backdrop -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm hidden lg:hidden"></div>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu"
+    class="fixed top-0 right-0 z-50 w-72 sm:w-80 h-full bg-darkNavy text-white transform translate-x-full transition-transform duration-300 ease-in-out p-6 flex flex-col justify-between shadow-2xl lg:hidden">
+    <div>
+      <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+        <img src="assets/images/logo/logo-light.svg" alt="PALM LEGAL" class="h-9 w-auto">
+        <button id="mobile-menu-close" class="p-1.5 rounded-md text-slate-400 hover:text-white hover:bg-white/10"
+          aria-label="Close menu">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col space-y-4 text-base font-medium">
+        <a href="index.html"
+          class="nav-link px-3 py-2 rounded-md hover:bg-white/5 hover:text-gold transition-colors">Home</a>
+        <a href="about.html"
+          class="nav-link px-3 py-2 rounded-md hover:bg-white/5 hover:text-gold transition-colors">About Us</a>
+        <a href="partners.html"
+          class="nav-link px-3 py-2 rounded-md hover:bg-white/5 hover:text-gold transition-colors">Our Partners</a>
+        <a href="practice-areas.html"
+          class="nav-link px-3 py-2 rounded-md hover:bg-white/5 hover:text-gold transition-colors">Practice Areas</a>
+        <a href="blog.html"
+          class="nav-link px-3 py-2 rounded-md hover:bg-white/5 hover:text-gold transition-colors">FAQs</a>
+        <a href="contact.html"
+          class="nav-link px-3 py-2 rounded-md hover:bg-white/5 hover:text-gold transition-colors">Contact</a>
+      </nav>
+    </div>
+
+    <div class="border-t border-white/10 pt-6 space-y-4">
+      <a href="contact.html"
+        class="w-full py-3 bg-gold text-darkNavy hover:bg-gold-dark font-semibold text-center rounded-lg text-sm uppercase tracking-wider block transition-colors">
+        Request Consultation
+      </a>
+      <div class="text-xs text-slate-400 text-center space-y-1">
+        <p>Partners: Priyam Agarwal &amp; Lovesh Mamnani</p>
+        <p>Supreme Court &bull; High Courts &bull; NCR</p>
+      </div>
+    </div>
+  </div>
+
+  <main class="flex-grow">
+
+    <!-- ==========================================================================
+         HERO SECTION SLIDER
+         ========================================================================== -->
+    <section id="hero-slider"
+      class="relative bg-darkNavy text-white overflow-hidden border-b border-gold/15"
+      aria-label="Hero Carousel">
+
+      <!-- Desktop Top-Right Controls (Grouped Together Away from Text, Hidden on Mobile) -->
+      <div
+        class="hidden md:flex absolute top-5 right-6 sm:right-8 lg:right-12 z-30 items-center gap-2 bg-darkNavy/85 px-3 py-1.5 rounded-full border border-gold/40 shadow-2xl backdrop-blur-md">
+        <div class="inline-flex items-center gap-1 text-xs text-slate-300 font-mono pr-1">
+          <span id="hero-counter-current" class="text-gold font-bold">01</span>
+          <span>/</span>
+          <span class="text-slate-400">03</span>
+        </div>
+        <div class="w-px h-3.5 bg-white/20"></div>
+        <button type="button" id="hero-prev-btn"
+          class="w-6 h-6 rounded-full bg-white/10 hover:bg-gold text-slate-200 hover:text-darkNavy flex items-center justify-center transition-all focus:outline-none"
+          aria-label="Previous slide">
+          <i data-lucide="chevron-left" class="w-3.5 h-3.5"></i>
+        </button>
+        <button type="button" id="hero-next-btn"
+          class="w-6 h-6 rounded-full bg-white/10 hover:bg-gold text-slate-200 hover:text-darkNavy flex items-center justify-center transition-all focus:outline-none"
+          aria-label="Next slide">
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+        </button>
+      </div>
+
+      <!-- ==================== SLIDE 1: FIRM OVERVIEW & PARTNERS ==================== -->
+      <div class="hero-slide active w-full min-h-[460px] sm:min-h-[480px] lg:min-h-[500px] flex items-center" data-index="0" aria-hidden="false">
+        <!-- Background Image with Gradient Overlay (Full Bleed Edge-to-Edge) -->
+        <div class="absolute inset-0 z-0 w-full h-full">
+          <img src="assets/images/banners/hero-court.jpg" alt="Supreme Court of India Architectural Facade"
+            class="w-full h-full object-cover object-center opacity-45" loading="eager" fetchpriority="high"
+            width="1920" height="1080">
+          <div class="absolute inset-0 bg-gradient-to-r from-darkNavy/95 via-darkNavy/80 to-darkNavy/50"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-5 pb-10 sm:pt-6 sm:pb-7 lg:pt-6 lg:pb-6">
+          <div class="max-w-4xl space-y-2 sm:space-y-2.5 lg:space-y-2.5">
+
+            <div
+              class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-[10.5px] sm:text-xs font-semibold tracking-widest uppercase">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5 text-gold"></i>
+              <span>PALM LEGAL &bull; ADVOCATES &amp; LEGAL COUNSEL</span>
+            </div>
+
+            <h1 class="font-serif text-2xl sm:text-3xl lg:text-[2.25rem] font-bold text-white leading-tight lg:leading-[1.18] tracking-tight">
+              Excellence in Legal Advocacy. <br class="hidden sm:inline">
+              <span class="text-gold font-normal">Trusted Counsel Across India.</span>
+            </h1>
+
+            <p class="font-editorial text-sm sm:text-base lg:text-lg text-slate-200 italic">
+              "Justice is not just a word — it is our steadfast commitment."
+            </p>
+
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
+              Providing diligent legal representation and counsel before the Supreme Court of India, High Courts, and
+              District Courts across diverse domains of Indian law.
+            </p>
+
+            <!-- Partners Pill with Names & Titles -->
+            <div
+              class="p-2 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm max-w-2xl grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center text-gold font-serif font-bold text-[10px] shrink-0">
+                  PA</div>
+                <div class="min-w-0">
+                  <span class="font-bold text-white block text-xs">PRIYAM AGARWAL</span>
+                  <span class="text-slate-400 text-[10.5px] block truncate">Partner &bull; Civil,
+                    Constitutional &amp; Commercial</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center text-gold font-serif font-bold text-[10px] shrink-0">
+                  LM</div>
+                <div class="min-w-0">
+                  <span class="font-bold text-white block text-xs">LOVESH MAMNANI</span>
+                  <span class="text-slate-400 text-[10.5px] block truncate">Partner &bull; Criminal
+                    Defence, Corporate &amp; Service</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Responsive Buttons (Mobile Fixed & Optimized) -->
+            <div class="pt-0.5 flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-2.5">
+              <a href="contact.html"
+                class="px-4 py-2 sm:px-5 sm:py-2.5 bg-gold hover:bg-gold-dark text-darkNavy hover:text-white font-semibold text-xs tracking-wider uppercase rounded-lg shadow-md hover:shadow-xl transition-all duration-200 text-center flex items-center justify-center gap-1.5 group">
+                <span>Request Consultation</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
+              </a>
+              <div class="grid grid-cols-2 sm:flex sm:flex-row gap-2 sm:gap-2.5">
+                <a href="partners.html"
+                  class="px-3.5 py-2 sm:px-4 sm:py-2.5 bg-white/10 hover:bg-white/15 text-white border border-white/20 hover:border-gold/50 font-medium text-xs tracking-wider uppercase rounded-lg transition-all duration-200 text-center">
+                  Our Partners
+                </a>
+                <a href="practice-areas.html"
+                  class="px-3.5 py-2 sm:px-4 sm:py-2.5 bg-white/10 hover:bg-white/15 text-slate-200 hover:text-white border border-white/10 hover:border-white/30 font-medium text-xs tracking-wider uppercase rounded-lg transition-all duration-200 text-center">
+                  Practice Areas
+                </a>
+              </div>
+            </div>
+
+            <!-- Highlight Badges -->
+            <div class="pt-2 sm:pt-2.5 grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-2.5 border-t border-white/10">
+              <div class="py-1.5 px-2 bg-white/5 rounded-lg border border-white/5 text-center">
+                <span class="block font-serif text-sm sm:text-base lg:text-lg font-bold text-gold">Apex</span>
+                <span class="text-[10px] sm:text-[10.5px] text-slate-400 truncate block">Supreme Court</span>
+              </div>
+              <div class="py-1.5 px-2 bg-white/5 rounded-lg border border-white/5 text-center">
+                <span class="block font-serif text-sm sm:text-base lg:text-lg font-bold text-gold">High Courts</span>
+                <span class="text-[10px] sm:text-[10.5px] text-slate-400 truncate block">Delhi &amp; States</span>
+              </div>
+              <div class="py-1.5 px-2 bg-white/5 rounded-lg border border-white/5 text-center">
+                <span class="block font-serif text-sm sm:text-base lg:text-lg font-bold text-gold">Multi-Discipline</span>
+                <span class="text-[10px] sm:text-[10.5px] text-slate-400 truncate block">Civil &amp; Criminal</span>
+              </div>
+              <div class="py-1.5 px-2 bg-white/5 rounded-lg border border-white/5 text-center">
+                <span class="block font-serif text-sm sm:text-base lg:text-lg font-bold text-gold">2 Partners</span>
+                <span class="text-[10px] sm:text-[10.5px] text-slate-400 truncate block">Priyam &amp; Lovesh</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== SLIDE 2: PARTNER SPOTLIGHT - PRIYAM AGARWAL ==================== -->
+      <div class="hero-slide w-full min-h-[460px] sm:min-h-[480px] lg:min-h-[500px] flex items-center" data-index="1" aria-hidden="true">
+        <!-- Background Image with Gradient Overlay (Full Bleed Edge-to-Edge) -->
+        <div class="absolute inset-0 z-0 w-full h-full">
+          <img src="assets/images/legal/supreme-court-interior.jpg" alt="Supreme Court Chamber"
+            class="w-full h-full object-cover object-center opacity-40" loading="lazy" width="1920" height="1080">
+          <div class="absolute inset-0 bg-gradient-to-r from-darkNavy/95 via-darkNavy/85 to-darkNavy/50"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-5 pb-10 sm:pt-6 sm:pb-7 lg:pt-6 lg:pb-6">
+          <div class="max-w-4xl space-y-2 sm:space-y-2.5 lg:space-y-2.5">
+
+            <div
+              class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-[10.5px] sm:text-xs font-semibold tracking-widest uppercase">
+              <i data-lucide="award" class="w-3.5 h-3.5 text-gold"></i>
+              <span>FIRM LEADERSHIP &bull; PARTNER PROFILE</span>
+            </div>
+
+            <div class="space-y-0.5">
+              <h2 class="font-serif text-2xl sm:text-3xl lg:text-[2.25rem] font-bold text-white leading-tight lg:leading-[1.18] tracking-tight">
+                PRIYAM AGARWAL
+              </h2>
+              <p class="font-serif text-sm sm:text-base lg:text-lg text-gold font-normal">
+                Partner &bull; PALM LEGAL
+              </p>
+            </div>
+
+            <p class="font-editorial text-sm sm:text-base lg:text-lg text-slate-200 italic">
+              "Civil Litigation, Constitutional Writs &amp; Commercial Advocacy"
+            </p>
+
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
+              Leading civil litigation, constitutional writ remedies before the Supreme Court and High Courts,
+              commercial arbitration, and strategic legal counsel with thorough doctrinal research and client-first
+              advocacy.
+            </p>
+
+            <!-- Responsive Buttons (Mobile Fixed & Optimized) -->
+            <div class="pt-0.5 flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-2.5">
+              <a href="contact.html?partner=priyam-agarwal"
+                class="px-4 py-2 sm:px-5 sm:py-2.5 bg-gold hover:bg-gold-dark text-darkNavy hover:text-white font-semibold text-xs tracking-wider uppercase rounded-lg shadow-md hover:shadow-xl transition-all duration-200 text-center flex items-center justify-center gap-1.5 group">
+                <span>Consult Priyam Agarwal</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
+              </a>
+              <div class="grid grid-cols-2 sm:flex sm:flex-row gap-2 sm:gap-2.5">
+                <a href="partners.html"
+                  class="px-3.5 py-2 sm:px-4 sm:py-2.5 bg-white/10 hover:bg-white/15 text-white border border-white/20 hover:border-gold/50 font-medium text-xs tracking-wider uppercase rounded-lg transition-all duration-200 text-center">
+                  View Profile
+                </a>
+                <a href="practice-areas.html#civil"
+                  class="px-3.5 py-2 sm:px-4 sm:py-2.5 bg-white/10 hover:bg-white/15 text-slate-200 hover:text-white border border-white/10 hover:border-white/30 font-medium text-xs tracking-wider uppercase rounded-lg transition-all duration-200 text-center">
+                  Civil Practice
+                </a>
+              </div>
+            </div>
+
+            <!-- Key Practice Tags for Priyam Agarwal -->
+            <div class="pt-2 sm:pt-2.5 grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-2.5 border-t border-white/10">
+              <div class="py-1.5 px-2 bg-white/5 rounded-lg border border-white/5 text-center">
+                <span class="block font-serif text-sm sm:text-base lg:text-lg font-bold text-gold">Civil Litigation</span>
+                <span class="text-[10px] sm:text-[10.5px] text-slate-400 truncate block">Property &amp; Title Suits</span>
+              </div>
+              <div class="py-1.5 px-2 bg-white/5 rounded-lg border border-white/5 text-center">
+                <span class="block font-serif text-sm sm:text-base lg:text-lg font-bold text-gold">Constitutional</span>
+                <span class="text-[10px] sm:text-[10.5px] text-slate-400 truncate block">Writs &amp; PIL Petitions</span>
+              </div>
+              <div class="py-1.5 px-2 bg-white/5 rounded-lg border border-white/5 text-center">
+                <span class="block font-serif text-sm sm:text-base lg:text-lg font-bold text-gold">Apex Appeals</span>
+                <span class="text-[10px] sm:text-[10.5px] text-slate-400 truncate block">Supreme Court SLP</span>
+              </div>
+              <div class="py-1.5 px-2 bg-white/5 rounded-lg border border-white/5 text-center">
+                <span class="block font-serif text-sm sm:text-base lg:text-lg font-bold text-gold">Commercial</span>
+                <span class="text-[10px] sm:text-[10.5px] text-slate-400 truncate block">Disputes &amp; Contracts</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== SLIDE 3: PARTNER SPOTLIGHT - LOVESH MAMNANI ==================== -->
+      <div class="hero-slide w-full min-h-[460px] sm:min-h-[480px] lg:min-h-[500px] flex items-center" data-index="2" aria-hidden="true">
+        <!-- Background Image with Gradient Overlay (Full Bleed Edge-to-Edge) -->
+        <div class="absolute inset-0 z-0 w-full h-full">
+          <img src="assets/images/legal/high-court-building.jpg" alt="High Court of Delhi"
+            class="w-full h-full object-cover object-center opacity-40" loading="lazy" width="1920" height="1080">
+          <div class="absolute inset-0 bg-gradient-to-r from-darkNavy/95 via-darkNavy/85 to-darkNavy/50"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-5 pb-10 sm:pt-6 sm:pb-7 lg:pt-6 lg:pb-6">
+          <div class="max-w-4xl space-y-2 sm:space-y-2.5 lg:space-y-2.5">
+
+            <div
+              class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-[10.5px] sm:text-xs font-semibold tracking-widest uppercase">
+              <i data-lucide="award" class="w-3.5 h-3.5 text-gold"></i>
+              <span>FIRM LEADERSHIP &bull; PARTNER PROFILE</span>
+            </div>
+
+            <div class="space-y-0.5">
+              <h2 class="font-serif text-2xl sm:text-3xl lg:text-[2.25rem] font-bold text-white leading-tight lg:leading-[1.18] tracking-tight">
+                LOVESH MAMNANI
+              </h2>
+              <p class="font-serif text-sm sm:text-base lg:text-lg text-gold font-normal">
+                Partner &bull; PALM LEGAL
+              </p>
+            </div>
+
+            <p class="font-editorial text-sm sm:text-base lg:text-lg text-slate-200 italic">
+              "Criminal Defence, Bail &amp; Quashing, Corporate &amp; Service Law"
+            </p>
+
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
+              Specializing in criminal trial strategy, regular and anticipatory bail applications, FIR quashing under
+              Section 482 / BNSS, corporate insolvency (NCLT), and public service tribunal matters.
+            </p>
+
+            <!-- Responsive Buttons (Mobile Fixed & Optimized) -->
+            <div class="pt-0.5 flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-2.5">
+              <a href="contact.html?partner=lovesh-mamnani"
+                class="px-4 py-2 sm:px-5 sm:py-2.5 bg-gold hover:bg-gold-dark text-darkNavy hover:text-white font-semibold text-xs tracking-wider uppercase rounded-lg shadow-md hover:shadow-xl transition-all duration-200 text-center flex items-center justify-center gap-1.5 group">
+                <span>Consult Lovesh Mamnani</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
+              </a>
+              <div class="grid grid-cols-2 sm:flex sm:flex-row gap-2 sm:gap-2.5">
+                <a href="partners.html"
+                  class="px-3.5 py-2 sm:px-4 sm:py-2.5 bg-white/10 hover:bg-white/15 text-white border border-white/20 hover:border-gold/50 font-medium text-xs tracking-wider uppercase rounded-lg transition-all duration-200 text-center">
+                  View Profile
+                </a>
+                <a href="practice-areas.html#criminal"
+                  class="px-3.5 py-2 sm:px-4 sm:py-2.5 bg-white/10 hover:bg-white/15 text-slate-200 hover:text-white border border-white/10 hover:border-white/30 font-medium text-xs tracking-wider uppercase rounded-lg transition-all duration-200 text-center">
+                  Criminal Practice
+                </a>
+              </div>
+            </div>
+
+            <!-- Key Practice Tags for Lovesh Mamnani -->
+            <div class="pt-2 sm:pt-2.5 grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-2.5 border-t border-white/10">
+              <div class="py-1.5 px-2 bg-white/5 rounded-lg border border-white/5 text-center">
+                <span class="block font-serif text-sm sm:text-base lg:text-lg font-bold text-gold">Criminal Defence</span>
+                <span class="text-[10px] sm:text-[10.5px] text-slate-400 truncate block">Trials &amp; Appeals</span>
+              </div>
+              <div class="py-1.5 px-2 bg-white/5 rounded-lg border border-white/5 text-center">
+                <span class="block font-serif text-sm sm:text-base lg:text-lg font-bold text-gold">Bail Advocacy</span>
+                <span class="text-[10px] sm:text-[10.5px] text-slate-400 truncate block">Regular &amp; Anticipatory</span>
+              </div>
+              <div class="py-1.5 px-2 bg-white/5 rounded-lg border border-white/5 text-center">
+                <span class="block font-serif text-sm sm:text-base lg:text-lg font-bold text-gold">Quashing FIR</span>
+                <span class="text-[10px] sm:text-[10.5px] text-slate-400 truncate block">Section 482 / BNSS</span>
+              </div>
+              <div class="py-1.5 px-2 bg-white/5 rounded-lg border border-white/5 text-center">
+                <span class="block font-serif text-sm sm:text-base lg:text-lg font-bold text-gold">Insolvency</span>
+                <span class="text-[10px] sm:text-[10.5px] text-slate-400 truncate block">NCLT &amp; IBC Matters</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Slide Indicator Dots (Visible ONLY on Mobile, Hidden on Desktop) -->
+      <div
+        class="md:hidden absolute bottom-3 left-0 right-0 z-20 flex items-center justify-center gap-2 pointer-events-auto">
+        <button type="button"
+          class="hero-dot h-1.5 rounded-full transition-all duration-300 bg-gold w-7 focus:outline-none" data-slide="0"
+          aria-label="Go to slide 1 (PALM LEGAL Overview)"></button>
+        <button type="button"
+          class="hero-dot h-1.5 rounded-full transition-all duration-300 bg-white/40 w-2.5 hover:bg-white/70 focus:outline-none"
+          data-slide="1" aria-label="Go to slide 2 (Partner Priyam Agarwal)"></button>
+        <button type="button"
+          class="hero-dot h-1.5 rounded-full transition-all duration-300 bg-white/40 w-2.5 hover:bg-white/70 focus:outline-none"
+          data-slide="2" aria-label="Go to slide 3 (Partner Lovesh Mamnani)"></button>
+      </div>
+
+    </section>
+
+    <!-- ==========================================================================
+         INTRODUCTION / ABOUT PALM LEGAL SECTION
+         ========================================================================== -->
+    <section class="py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+          <div class="lg:col-span-6 space-y-6 reveal-on-scroll">
+            <div class="inline-flex items-center gap-2 text-gold font-semibold text-xs uppercase tracking-widest">
+              <span class="w-8 h-px bg-gold"></span>
+              <span>About PALM LEGAL</span>
+            </div>
+
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-darkNavy leading-tight">
+              A Law Firm Grounded in Rigorous Research, Ethical Practice &amp; Client Dedication
+            </h2>
+
+            <p class="text-slate-600 leading-relaxed">
+              <strong>PALM LEGAL</strong> is a full-service law firm providing expert legal representation before the
+              Supreme Court of India, High Courts, and District Courts across India. Founded on principles of integrity,
+              transparency, and thorough preparation, our firm combines deep doctrinal knowledge with practical
+              courtroom advocacy.
+            </p>
+
+            <p class="text-slate-600 leading-relaxed">
+              Our approach is rooted in diligent legal research, strict adherence to the professional ethics mandated by
+              the Bar Council of India, and client-focused representation — ensuring that each client receives the
+              highest standard of legal service, regardless of the complexity of their matter.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="flex items-start gap-3 p-3.5 rounded-lg bg-ivory border border-slate-200">
+                <i data-lucide="scale" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="font-semibold text-sm text-darkNavy">Supreme Court Enrolled</h4>
+                  <p class="text-xs text-slate-500">Access to India's apex judicial forum</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 p-3.5 rounded-lg bg-ivory border border-slate-200">
+                <i data-lucide="landmark" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="font-semibold text-sm text-darkNavy">High Court Practice</h4>
+                  <p class="text-xs text-slate-500">Regular appearances across appellate courts</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 p-3.5 rounded-lg bg-ivory border border-slate-200">
+                <i data-lucide="briefcase" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="font-semibold text-sm text-darkNavy">Civil &amp; Criminal Litigation</h4>
+                  <p class="text-xs text-slate-500">Broad trial and appellate experience</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 p-3.5 rounded-lg bg-ivory border border-slate-200">
+                <i data-lucide="file-text" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="font-semibold text-sm text-darkNavy">Constitutional Law</h4>
+                  <p class="text-xs text-slate-500">Fundamental rights and writ remedies</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="about.html"
+                class="inline-flex items-center gap-2 text-deepNavy hover:text-gold font-semibold text-sm tracking-wider uppercase group">
+                <span>Read Full Chamber Profile</span>
+                <i data-lucide="arrow-right"
+                  class="w-4 h-4 group-hover:translate-x-1 transition-transform text-gold"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 reveal-on-scroll">
+            <div class="relative">
+              <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white img-zoom-container">
+                <img src="assets/images/legal/supreme-court-interior.jpg" alt="Supreme Court of India Courtroom"
+                  class="w-full h-full object-cover" loading="lazy" width="800" height="600">
+              </div>
+              <div
+                class="absolute -bottom-6 -right-6 hidden sm:block w-48 p-4 rounded-xl bg-deepNavy text-white shadow-xl border border-gold/30">
+                <p class="font-serif text-lg font-bold text-gold">PALM LEGAL</p>
+                <p class="text-xs text-slate-300">Dedicated Advocates &bull; New Delhi &amp; NCR</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         OUR PARTNERS SECTION (Priyam Agarwal & Lovesh Mamnani)
+         ========================================================================== -->
+    <section class="py-20 bg-ivory border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2 text-gold font-semibold text-xs uppercase tracking-widest">
+            <span class="w-6 h-px bg-gold"></span>
+            <span>Firm Leadership</span>
+            <span class="w-6 h-px bg-gold"></span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-darkNavy">
+            Our Partners
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            PALM LEGAL is led by two dedicated partners committed to professional excellence, legal integrity, and
+            strategic representation.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+
+          <!-- Partner 1: PRIYAM AGARWAL -->
+          <article
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md legal-card reveal-on-scroll">
+            <div class="p-6 sm:p-8 flex flex-col items-center text-center">
+              <div
+                class="w-48 h-56 rounded-xl overflow-hidden mb-6 shadow-md bg-darkNavy flex items-center justify-center border border-gold/30">
+                <img src="assets/images/partners/priyam-agarwal.jpg" alt="Priyam Agarwal - Partner, PALM LEGAL"
+                  class="w-full h-full object-cover object-top" loading="lazy" width="500" height="600">
+              </div>
+              <h3 class="font-serif text-xl font-bold text-darkNavy tracking-wide">
+                PRIYAM AGARWAL
+              </h3>
+              <p class="text-gold font-medium text-xs uppercase tracking-widest mt-1 mb-4">
+                Partner &bull; PALM LEGAL
+              </p>
+              <div class="w-12 h-0.5 bg-gold/40 mb-4"></div>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Handling legal representation before the Supreme Court of India, High Courts, and commercial forums.
+                Focus on civil litigation, constitutional matters, commercial dispute resolution, and comprehensive
+                legal strategy.
+              </p>
+              <div
+                class="w-full pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <span class="inline-flex items-center gap-1.5"><i data-lucide="award" class="w-4 h-4 text-gold"></i>
+                  Verified Partner</span>
+                <a href="partners.html"
+                  class="text-deepNavy hover:text-gold font-semibold inline-flex items-center gap-1">
+                  View Profile <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Partner 2: LOVESH MAMNANI -->
+          <article
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md legal-card reveal-on-scroll">
+            <div class="p-6 sm:p-8 flex flex-col items-center text-center">
+              <div
+                class="w-48 h-56 rounded-xl overflow-hidden mb-6 shadow-md bg-darkNavy flex items-center justify-center border border-gold/30">
+                <img src="assets/images/partners/lovesh-mamnani.jpg" alt="Lovesh Mamnani - Partner, PALM LEGAL"
+                  class="w-full h-full object-cover object-top" loading="lazy" width="500" height="600">
+              </div>
+              <h3 class="font-serif text-xl font-bold text-darkNavy tracking-wide">
+                LOVESH MAMNANI
+              </h3>
+              <p class="text-gold font-medium text-xs uppercase tracking-widest mt-1 mb-4">
+                Partner &bull; PALM LEGAL
+              </p>
+              <div class="w-12 h-0.5 bg-gold/40 mb-4"></div>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Active in criminal defence, bail applications, corporate disputes, service matters, and appellate
+                litigation. Committed to diligent case analysis, meticulous documentation, and client-first advocacy
+                across forums.
+              </p>
+              <div
+                class="w-full pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <span class="inline-flex items-center gap-1.5"><i data-lucide="award" class="w-4 h-4 text-gold"></i>
+                  Verified Partner</span>
+                <a href="partners.html"
+                  class="text-deepNavy hover:text-gold font-semibold inline-flex items-center gap-1">
+                  View Profile <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="mt-12 text-center reveal-on-scroll">
+          <a href="partners.html"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-deepNavy hover:bg-darkNavy text-white font-medium text-xs tracking-wider uppercase transition-colors shadow">
+            <span>Learn More About Our Partners</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 text-gold"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PRACTICE AREAS SECTION
+         ========================================================================== -->
+    <section class="py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2 text-gold font-semibold text-xs uppercase tracking-widest">
+            <span class="w-6 h-px bg-gold"></span>
+            <span>Comprehensive Legal Representation</span>
+            <span class="w-6 h-px bg-gold"></span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-darkNavy">
+            Areas of Practice
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            Offering comprehensive legal counsel spanning multiple domains of Indian law before trial and appellate
+            forums.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+
+          <!-- 1. Civil Litigation -->
+          <div
+            class="p-6 sm:p-7 rounded-xl bg-ivory border border-slate-200 legal-card reveal-on-scroll flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-deepNavy text-gold flex items-center justify-center mb-5">
+                <i data-lucide="file-text" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-darkNavy mb-2">Civil Litigation</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Property disputes, contract enforcement, injunctions, declaratory suits, recovery suits, and civil
+                appeals before trial and appellate courts.
+              </p>
+            </div>
+            <a href="practice-areas.html#civil"
+              class="inline-flex items-center gap-1.5 text-xs font-semibold text-deepNavy hover:text-gold uppercase tracking-wider">
+              <span>Read Practice Details</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold"></i>
+            </a>
+          </div>
+
+          <!-- 2. Criminal Law -->
+          <div
+            class="p-6 sm:p-7 rounded-xl bg-ivory border border-slate-200 legal-card reveal-on-scroll flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-deepNavy text-gold flex items-center justify-center mb-5">
+                <i data-lucide="shield-alert" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-darkNavy mb-2">Criminal Law</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Bail applications, criminal appeals, anticipatory bail, quashing petitions, white-collar defence, and
+                Section 138 NI Act cheque dishonour matters.
+              </p>
+            </div>
+            <a href="practice-areas.html#criminal"
+              class="inline-flex items-center gap-1.5 text-xs font-semibold text-deepNavy hover:text-gold uppercase tracking-wider">
+              <span>Read Practice Details</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold"></i>
+            </a>
+          </div>
+
+          <!-- 3. Constitutional Law -->
+          <div
+            class="p-6 sm:p-7 rounded-xl bg-ivory border border-slate-200 legal-card reveal-on-scroll flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-deepNavy text-gold flex items-center justify-center mb-5">
+                <i data-lucide="landmark" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-darkNavy mb-2">Constitutional Law &amp; Writs</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Writ petitions (Habeas Corpus, Mandamus, Certiorari), PIL, fundamental rights enforcement, and
+                constitutional challenges before High Courts and Supreme Court.
+              </p>
+            </div>
+            <a href="practice-areas.html#constitutional"
+              class="inline-flex items-center gap-1.5 text-xs font-semibold text-deepNavy hover:text-gold uppercase tracking-wider">
+              <span>Read Practice Details</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold"></i>
+            </a>
+          </div>
+
+          <!-- 4. Family & Matrimonial -->
+          <div
+            class="p-6 sm:p-7 rounded-xl bg-ivory border border-slate-200 legal-card reveal-on-scroll flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-deepNavy text-gold flex items-center justify-center mb-5">
+                <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-darkNavy mb-2">Family &amp; Matrimonial</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Divorce (contested and mutual), maintenance, child custody, domestic violence proceedings, Hindu
+                succession, and matrimonial settlements.
+              </p>
+            </div>
+            <a href="practice-areas.html#family"
+              class="inline-flex items-center gap-1.5 text-xs font-semibold text-deepNavy hover:text-gold uppercase tracking-wider">
+              <span>Read Practice Details</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold"></i>
+            </a>
+          </div>
+
+          <!-- 5. Corporate & Commercial -->
+          <div
+            class="p-6 sm:p-7 rounded-xl bg-ivory border border-slate-200 legal-card reveal-on-scroll flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-deepNavy text-gold flex items-center justify-center mb-5">
+                <i data-lucide="building-2" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-darkNavy mb-2">Corporate &amp; Commercial</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Company law matters before NCLT/NCLAT, insolvency (IBC), commercial disputes, contract enforcement, and
+                DRT recovery proceedings.
+              </p>
+            </div>
+            <a href="practice-areas.html#corporate"
+              class="inline-flex items-center gap-1.5 text-xs font-semibold text-deepNavy hover:text-gold uppercase tracking-wider">
+              <span>Read Practice Details</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold"></i>
+            </a>
+          </div>
+
+          <!-- 6. Service & Labour Law -->
+          <div
+            class="p-6 sm:p-7 rounded-xl bg-ivory border border-slate-200 legal-card reveal-on-scroll flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-deepNavy text-gold flex items-center justify-center mb-5">
+                <i data-lucide="users" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-darkNavy mb-2">Service &amp; Labour Law</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Service disputes before CAT and High Courts, departmental inquiry proceedings, termination disputes, and
+                labour tribunal representation.
+              </p>
+            </div>
+            <a href="practice-areas.html#service"
+              class="inline-flex items-center gap-1.5 text-xs font-semibold text-deepNavy hover:text-gold uppercase tracking-wider">
+              <span>Read Practice Details</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="mt-12 text-center reveal-on-scroll">
+          <a href="practice-areas.html"
+            class="inline-flex items-center gap-2 px-7 py-3.5 bg-deepNavy hover:bg-darkNavy text-white font-medium text-xs tracking-wider uppercase rounded-lg shadow-md transition-colors">
+            <span>View All 8 Practice Areas</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 text-gold"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WHY CHOOSE PALM LEGAL / COMMITMENT TO EXCELLENCE
+         ========================================================================== -->
+    <section class="py-20 bg-darkNavy text-white border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2 text-gold font-semibold text-xs uppercase tracking-widest">
+            <span class="w-6 h-px bg-gold"></span>
+            <span>Our Foundation</span>
+            <span class="w-6 h-px bg-gold"></span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white">
+            The Commitment to Excellence
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base">
+            Every legal matter entrusted to PALM LEGAL is handled with rigor, integrity, and disciplined strategic
+            counsel.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <div
+            class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-gold/40 transition-colors reveal-on-scroll">
+            <div class="w-12 h-12 rounded-lg bg-gold/15 text-gold flex items-center justify-center mb-5">
+              <i data-lucide="book-open" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-base font-bold text-white mb-2">Diligent Research</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Every case is supported by thorough legal research, meticulous statutory interpretation, and deep analysis
+              of precedents.
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-gold/40 transition-colors reveal-on-scroll">
+            <div class="w-12 h-12 rounded-lg bg-gold/15 text-gold flex items-center justify-center mb-5">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-base font-bold text-white mb-2">Ethical Practice</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Strict adherence to professional ethics and the Bar Council of India's rigorous standards of professional
+              conduct.
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-gold/40 transition-colors reveal-on-scroll">
+            <div class="w-12 h-12 rounded-lg bg-gold/15 text-gold flex items-center justify-center mb-5">
+              <i data-lucide="user-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-base font-bold text-white mb-2">Client-Centred</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Transparent communication, regular case status updates, and accessible counsel throughout the judicial
+              process.
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-gold/40 transition-colors reveal-on-scroll">
+            <div class="w-12 h-12 rounded-lg bg-gold/15 text-gold flex items-center justify-center mb-5">
+              <i data-lucide="scale" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-base font-bold text-white mb-2">Supreme Court Access</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Regular appearances before the Apex Court — providing clients direct access to India's highest judicial
+              forum.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         LEGAL INSIGHTS & ARTICLES PREVIEW
+         ========================================================================== -->
+    <section class="py-20 bg-ivory border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6 reveal-on-scroll">
+          <div>
+            <div class="inline-flex items-center gap-2 text-gold font-semibold text-xs uppercase tracking-widest mb-2">
+              <span class="w-6 h-px bg-gold"></span>
+              <span>Knowledge &amp; Analysis</span>
+            </div>
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-darkNavy">
+              From the Blog &amp; Legal Insights
+            </h2>
+          </div>
+          <a href="blog.html"
+            class="inline-flex items-center gap-2 text-deepNavy hover:text-gold font-semibold text-sm tracking-wider uppercase">
+            <span>View All Articles &amp; FAQs</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 text-gold"></i>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <!-- Article 1 -->
+          <article
+            class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm legal-card reveal-on-scroll flex flex-col justify-between">
+            <div class="p-6">
+              <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                <span class="px-2.5 py-1 bg-gold/10 text-gold rounded font-medium">Constitutional Law</span>
+                <span>April 2025</span>
+              </div>
+              <h3 class="font-serif text-base font-bold text-darkNavy mb-3 hover:text-gold transition-colors">
+                <a href="blog.html#article-32">Understanding Article 32: Right to Constitutional Remedies</a>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed line-clamp-3">
+                Article 32 of the Constitution of India grants citizens the right to move the Supreme Court for
+                enforcement of fundamental rights. It empowers the court to issue prerogative writs.
+              </p>
+            </div>
+            <div class="px-6 pb-6 pt-2 border-t border-slate-100">
+              <a href="blog.html#article-32"
+                class="inline-flex items-center gap-1.5 text-xs font-semibold text-deepNavy hover:text-gold uppercase tracking-wider">
+                <span>Read Full Article</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article
+            class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm legal-card reveal-on-scroll flex flex-col justify-between">
+            <div class="p-6">
+              <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                <span class="px-2.5 py-1 bg-gold/10 text-gold rounded font-medium">Civil Law</span>
+                <span>March 2025</span>
+              </div>
+              <h3 class="font-serif text-base font-bold text-darkNavy mb-3 hover:text-gold transition-colors">
+                <a href="blog.html#property-disputes">Property Disputes in India: Key Legal Remedies Available</a>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed line-clamp-3">
+                Property disputes are among the most contested civil matters before Indian courts. This article outlines
+                key remedies including declaration of title, injunctions, and partition suits.
+              </p>
+            </div>
+            <div class="px-6 pb-6 pt-2 border-t border-slate-100">
+              <a href="blog.html#property-disputes"
+                class="inline-flex items-center gap-1.5 text-xs font-semibold text-deepNavy hover:text-gold uppercase tracking-wider">
+                <span>Read Full Article</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article
+            class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm legal-card reveal-on-scroll flex flex-col justify-between">
+            <div class="p-6">
+              <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                <span class="px-2.5 py-1 bg-gold/10 text-gold rounded font-medium">Criminal Law</span>
+                <span>February 2025</span>
+              </div>
+              <h3 class="font-serif text-base font-bold text-darkNavy mb-3 hover:text-gold transition-colors">
+                <a href="blog.html#anticipatory-bail">Anticipatory Bail Under Section 438 CrPC / BNSS</a>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed line-clamp-3">
+                Anticipatory bail allows a person to seek bail in anticipation of an arrest. Discover judicial criteria,
+                conditions imposed by courts, and critical procedural requirements.
+              </p>
+            </div>
+            <div class="px-6 pb-6 pt-2 border-t border-slate-100">
+              <a href="blog.html#anticipatory-bail"
+                class="inline-flex items-center gap-1.5 text-xs font-semibold text-deepNavy hover:text-gold uppercase tracking-wider">
+                <span>Read Full Article</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CALL TO ACTION SECTION
+         ========================================================================== -->
+    <section class="py-16 bg-deepNavy text-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6 reveal-on-scroll">
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white">
+          Have a Legal Matter? Let's Discuss.
+        </h2>
+        <p class="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">
+          Providing informed, ethical, and effective legal representation across India. Reach out for a confidential
+          consultation with PALM LEGAL.
+        </p>
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="contact.html"
+            class="px-8 py-3.5 bg-gold hover:bg-gold-dark text-darkNavy hover:text-white font-semibold text-sm tracking-wider uppercase rounded-lg shadow-lg transition-colors">
+            Schedule a Consultation
+          </a>
+          <a href="tel:+919773900915"
+            class="px-8 py-3.5 bg-white/10 hover:bg-white/15 text-white border border-white/20 font-medium text-sm tracking-wider uppercase rounded-lg transition-colors inline-flex items-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 text-gold"></i>
+            <span>Call +91-9773900915</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="bg-darkNavy text-slate-400 text-sm border-t border-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+
+        <!-- Column 1: Brand & Overview -->
+        <div class="lg:col-span-4 space-y-4">
+          <a href="index.html" class="inline-block" title="PALM LEGAL">
+            <img src="assets/images/logo/logo-light.svg" alt="PALM LEGAL" class="h-10 w-auto">
+          </a>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Providing dedicated legal representation before the Supreme Court of India, High Courts, and District
+            Courts. Committed to justice, ethics, and client welfare.
+          </p>
+          <div class="pt-2 text-xs text-slate-400 space-y-1">
+            <p><strong class="text-slate-200">Partners:</strong> Priyam Agarwal &bull; Lovesh Mamnani</p>
+            <p>Advocates &amp; Legal Counsel</p>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-serif text-white text-base font-semibold tracking-wider uppercase text-gold">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-gold transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-gold transition-colors">About Us</a></li>
+            <li><a href="partners.html" class="hover:text-gold transition-colors">Our Partners</a></li>
+            <li><a href="practice-areas.html" class="hover:text-gold transition-colors">Practice Areas</a></li>
+            <li><a href="blog.html" class="hover:text-gold transition-colors">Blog / FAQs</a></li>
+            <li><a href="contact.html" class="hover:text-gold transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Practice Areas -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-serif text-white text-base font-semibold tracking-wider uppercase text-gold">Practice Areas
+          </h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="practice-areas.html#civil" class="hover:text-gold transition-colors">Civil Litigation</a></li>
+            <li><a href="practice-areas.html#criminal" class="hover:text-gold transition-colors">Criminal Law</a></li>
+            <li><a href="practice-areas.html#constitutional" class="hover:text-gold transition-colors">Constitutional
+                Law &amp; Writs</a></li>
+            <li><a href="practice-areas.html#family" class="hover:text-gold transition-colors">Family &amp; Matrimonial
+                Law</a></li>
+            <li><a href="practice-areas.html#corporate" class="hover:text-gold transition-colors">Corporate &amp;
+                Commercial Law</a></li>
+            <li><a href="practice-areas.html#service" class="hover:text-gold transition-colors">Service &amp; Labour
+                Law</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-serif text-white text-base font-semibold tracking-wider uppercase text-gold">Chamber Contact
+          </h4>
+          <ul class="space-y-2.5 text-xs text-slate-300">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
+              <span>Ganga Yamuna Hindon Apartments, G1/604, Siddharth Vihar, Indirapuram, Ghaziabad, Uttar Pradesh
+                201009</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-gold shrink-0"></i>
+              <a href="tel:+919773900915" class="hover:text-gold transition-colors">+91-9773900915</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="mail" class="w-4 h-4 text-gold shrink-0"></i>
+              <a href="mailto:contact@palmlegal.in" class="hover:text-gold transition-colors">contact@palmlegal.in</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="clock" class="w-4 h-4 text-gold shrink-0"></i>
+              <span>Mon – Sat: 10:00 AM – 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Disclaimer & Copyright Bar -->
+      <div
+        class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <p>&copy; 2025 PALM LEGAL. All Rights Reserved. Partners: Priyam Agarwal &amp; Lovesh Mamnani.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="trigger-disclaimer-modal hover:text-gold transition-colors">Bar Council Disclaimer</a>
+          <span>&bull;</span>
+          <a href="https://wa.me/919773900915" target="_blank" rel="noopener noreferrer"
+            class="hover:text-gold transition-colors inline-flex items-center gap-1">
+            <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400"></i>
+            <span>WhatsApp Enquiry</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="back-to-top"
+    class="fixed bottom-6 right-6 z-30 p-3 rounded-full bg-deepNavy text-gold border border-gold/40 shadow-xl opacity-0 pointer-events-none transition-all duration-300 hover:bg-gold hover:text-darkNavy focus:outline-none"
+    aria-label="Back to top">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
